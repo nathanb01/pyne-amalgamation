@@ -3,7 +3,6 @@
 
 int main(int argc, char **argv)
 {
-	pyne::nucname::id(std::string("0-H-1"));
-	printf("hello world\n");
+	std::cout << pyne::nucname::id(std::string("Cs137")) << std::endl;
 	return 0;
 }
