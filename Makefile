@@ -2,7 +2,7 @@ all: pyne
 
 flags = -O3
 
-BASE = /home/scopatz/miniconda3
+BASE ?= /home/scopatz/miniconda3
 
 pyne: main.o pyne.o
 			g++ main.o pyne.o $(flags) -lhdf5 -L$(BASE)/lib -o main
